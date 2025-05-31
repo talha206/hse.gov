@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .main-content {
+     /* Assuming sidebar is fixed at 250px */
+    padding: 20px;
+    width: 1200px;
+    display: flex;
+    gap: 30px;
+    justify-items: center;
+    
+    justify-content: flex-end;
+    margin-left: 60px;
+
+
+  }
+  
+  h1 {
+    color: #4b006e;
+    margin-bottom: 30px;
+  }
+  
+  .filters {
+    justify-content: flex-start;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding:10px 0 ;
+  }
+  
+  .filters select,
+  .filters input {
+    padding: 5px;
+    border: 1px solid #222;
+    border-radius: 4px;
+  }
+  
+  
+  .filters button {
+    padding: 6px 12px;
+  }
+
+   
+  .categories{
+    display:flex;
+    flex-direction: column;
+  }
+  .categories label{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  
+  .date{
+    display: flex;
+  }
+  .dates{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    overflow: hidden;
+    align-items: flex-start;
+    margin-right: 3px;
+    
+  }
+  .dates input{
+    width: 97px;
+    box-sizing: border-box;
+  }
+  .dates label{
+    font-size: 14px;
+  }
+  .first{
+    position: relative;
+  }
+  .second{position: absolute;
+   right: 10px;}
+.location{
+    width: 170px;
+}
+
+.buttons{
+    margin-top: 15px;
+
+
+}
+  .filter-button{
+    height: 28px;
+    padding: 2px 17px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #58595b;
+    font-size: 14px;
+    width: 75px;
+    border: none;
+ 
+  }
+  .clear {
+    background-color: #a3001c;
+    height: 28px;
+    padding: 2px 17px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    width: 75px;
+    border: none;
+  }
+  
+  .main-table{
+    margin-top: 50px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+  
+  
+  th, td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+
+  }
+  td{
+    font-weight: 400;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    color: #222;
+    font-weight: bold;
+  }
+  a{
+    color: #58595b;
+    font-weight: bold;
+  }
+  .main{
+    text-align: left;
+  }
+  .sort{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+  }
+  .sort span {
+    display: flex;
+    flex-direction:column ;
+    align-items: start;
+  }
+  .sort label{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 2px;
+  }
+  .sort select{
+    padding: 4px 50px 4px 3px;
+    border-radius: 4px ;
+     color: #58595b;
+     font-weight: 200;
+  }
+
+  .back-top{
+    margin-top: 10px;
+  }
+  .back-top a{
+    font-size: 13px;
+  }
+
+  .new-tag {
+    background-color: #2d7500;
+    color: white;
+    font-size: 0.9em;
+    padding: 1px 7px 2px 7px ;
+    border-radius: 90px;
+    margin-left: 8px;
+    vertical-align: middle;
+    width: max-content;
+    font-weight: bold;
+  }
+  

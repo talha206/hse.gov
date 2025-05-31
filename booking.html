@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Booking Form - HSE Solutions</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p><strong>Cookies on HSE Solutions</strong></p>
+            <p>We use some essential cookies to make this service work. We'd like to set additional cookies so we can remember your settings, understand how people use the service and make improvements.</p>
+            <p><a href="#" class="cookie-link">View our cookie policy</a></p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn" onclick="acceptCookies()">Accept additional cookies</button>
+                <button class="cookie-btn secondary" onclick="rejectCookies()">Reject additional cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">HSE Solutions</div>
+            <div class="tagline">Products and services to help you solve your health and safety challenges</div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="sub-div">
+            <a href="net-zero.html" class="grid-item1"
+            style="background-color: #2846a5;">
+              <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Publications and Products</h4></span>
+            </a>
+            
+            <a href="training.html" class="grid-item1"
+            style="background-color: #4f2170;">
+            <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Training and<br> Events</h4></span>
+            </a>
+            
+            <a href="research.html" class="grid-item1"
+            style="background-color: #ce421b;">
+            <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Testing and Monitoring</h4></span>
+            </a>
+            
+            <a href="health.html" class="grid-item1"
+            style="background-color: #287826; margin-bottom: 22px;">
+            <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Research and Consultancy</h4></span>        </a>
+            
+             
+        </div>
+    
+        <div class="main">
+        <!-- Course Information -->
+        <section class="course-info">
+            <h1 class="course-title">Health and Safety Training Course</h1>
+            <div class="course-details">
+                <div class="detail-item">
+                    <span class="detail-label">Course Code:</span>
+                    <span class="detail-value">HSE-389</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Duration:</span>
+                    <span class="detail-value">1 Day</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Course length:</span>
+                    <span class="detail-value">1 day</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Price:</span>
+                    <span class="detail-value">£295.00 + VAT</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location:</span>
+                    <span class="detail-value">Various venues available</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <form class="booking-form" id="bookingForm">
+            <!-- Personal Details -->
+            <section class="form-section">
+                <h2 class="section-title">Personal Details</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title" class="form-label">Title</label>
+                        <select id="title" name="title" class="form-select">
+                            <option value="">Please select</option>
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="miss">Miss</option>
+                            <option value="ms">Ms</option>
+                            <option value="dr">Dr</option>
+                            <option value="prof">Prof</option>
+                        </select>
+                    </div>
+                
+
+                 
+                    <div class="form-group">
+                        <label for="firstName" class="form-label required">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label required">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-input" required>
+                    </div>
+               
+
+                 
+                    <div class="form-group">
+                        <label for="email" class="form-label required">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label required">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                    </div>
+                
+
+                 
+                    <div class="form-group">
+                        <label for="jobTitle" class="form-label">Job Title</label>
+                        <input type="text" id="jobTitle" name="jobTitle" class="form-input">
+                    </div>
+               
+
+             
+                
+                 
+                    <div class="form-group">
+                        <label for="companyName" class="form-label required">Company Name</label>
+                        <input type="text" id="companyName" name="companyName" class="form-input" required>
+                    </div>
+               
+
+                 
+                    <div class="form-group">
+                        <label for="address1" class="form-label required">Address Line 1</label>
+                        <input type="text" id="address1" name="address1" class="form-input" required>
+                    </div>
+                
+
+                 
+                    <div class="form-group">
+                        <label for="address2" class="form-label">Address Line 2</label>
+                        <input type="text" id="address2" name="address2" class="form-input">
+                    </div>
+                
+
+                 
+                    <div class="form-group">
+                        <label for="city" class="form-label required">City</label>
+                        <input type="text" id="city" name="city" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode" class="form-label required">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" class="form-input" required>
+                    </div>
+                
+ 
+                    <div class="form-group">
+                        <label for="country" class="form-label required">Country</label>
+                        <select id="country" name="country" class="form-select" required>
+                            <option value="">  </option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ireland">Ireland</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                
+            
+ 
+          
+                
+                
+                     
+                
+
+                
+                    
+                
+
+                     <div class="form-group">
+                        <label for="attendees" class="form-label required">Number of Attendees</label>
+                        <select id="attendees" name="attendees" class="form-select" required>
+                            <option value=""> </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6 or more</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Requirements -->
+            <section class="form-section">
+                <h2 class="section-title">Question & Comments</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="specialRequirements" class="form-label">Special Requirements or Accessibility Needs</label>
+                        <textarea id="specialRequirements" name="specialRequirements" class="form-textarea"  ></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="additionalInfo" class="form-label">Additional Information</label>
+                        <textarea id="additionalInfo" name="additionalInfo" class="form-textarea"  ></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Terms and Conditions -->
+            <section class="form-section">
+                <p style="text-decoration: underline;color: #58595b;font-size: 14px;font-weight: bold;margin-bottom: 20px; ">   Terms and conditions
+                    </p>
+                <div class="checkbox-group">
+                    
+                      
+                    <input type="checkbox" id="terms" name="terms" class="form-checkbox" required>
+                    <label for="terms" class="checkbox-label">
+                        I agree to the <a href="#" class="terms-link">terms and conditions</a> <span class="required-asterisk"></span>
+                    </label>
+                </div>
+
+                
+            </section>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit Booking Request</button>
+             </div>
+        </form>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Health and Safety Executive. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        function rejectCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted successfully! (This is a demo - no actual booking has been made)');
+        });
+    </script>
+</body>
+</html>

@@ -2,16 +2,13 @@
 .sub-dev{
     width: 300px;
 }
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
+ 
 .main{
     width: 870px;
 }
 .grid-item1{
 background-color: var(--light-gray);
-
+text-decoration: none;
 overflow: hidden;
 padding-left: 10px; 
 display: flex;
