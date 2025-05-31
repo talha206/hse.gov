@@ -1,0 +1,40 @@
+
+.sub-dev{
+    width: 300px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.main{
+    width: 870px;
+}
+.grid-item1{
+background-color: var(--light-gray);
+
+overflow: hidden;
+padding-left: 10px; 
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 92px;
+margin:0px 0 10px 0 ;
+width: 280px;
+color: #ffffff;
+
+}
+ 
+span{
+    display: flex;
+    line-height: normal;
+
+    align-items: center;
+}
+.grid-item1 h4{
+    margin:0 0 0 8px ;
+    font-size: 1.4rem;
+}
+.arrow-img{
+    width: 40px;
+    height: 40px;
+}
