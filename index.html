@@ -6,15 +6,33 @@
     <title>HSE Science and Research Centre</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+  
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+           <div id="myLinks">
+            
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div> 
+    </div>
+         <nav class="web-view-nav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
+   
     <div class="main-container">
         <!-- First large item (2x2) -->
         <div class="grid-item">
@@ -80,5 +98,15 @@
          
          
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
