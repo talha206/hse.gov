@@ -6,7 +6,128 @@
   <title>Contact Us - HSE Science and Research Centre</title>
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<style>
+  
+/* Media Query: Mobile devices (≤ 600px) */
+@media (max-width: 600px) {
+  p {
+    font-size: 0.8em;
+    max-width: 350px;
+    text-align: left;
+  }
+
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  iframe,
+  img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+  }
+
+   
+  h1{
+    width: max-content;
+    font-size: 20px;
+  }
+  section{width: max-content;}
+  .sub-div {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .grid-item1 {
+    height: 60px;
+    max-width: 160px;
+  }
+
+  .grid-item1 span h4 {
+    font-size: 0.7rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .arrow-img {
+    width: 20px;
+    height: 20px;
+  }
+  a{
+    color: #58595b;
+  }
+  .visiting{
+    max-width: 300px;
+  }
+  .visiting h3
+{
+  font-size: 14px !important;
+  }
+}
+
+/* Optional: Ultra-small devices (≤ 350px) */
+@media (max-width: 350px) {
+  .contact-container h2,
+  .contact-container h3,
+  .contact-container h4{
+    font-size: 14px;
+    word-wrap:break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    max-width: 250px;
+  }
+  body{
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .container h1{
+    font-size: 18px;
+  }
+  p {
+    font-size: 0.5em;
+    max-width: 300px;
+  }
+  .sub-div{
+    gap: 5px;
+    grid-template-columns: repeat(2, 0.4-fr);
+
+  }
+
+  .grid-item1 {
+    max-height: 65px;
+    max-width: 140px;
+  }
+
+  .grid-item1 span h4 {
+    font-size: 0.7rem;
+  }
+
+  .arrow-img {
+    max-width: 10px;
+    max-height: 10px;
+  }
+  .contact-container{
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .visiting{
+    max-width: 300px;
+  }
+  .visiting h3
+{
+  font-size: 14px !important;
+  }
+}
+
+</style>
 <body>
 
   <header class="site-header">
@@ -16,22 +137,37 @@
       
     </div>
   </header>
-  <nav>
+    <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+       <div id="myLinks">
+        
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> 
+    </div>
+     <nav class="web-view-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-  </nav>
+   </nav>
 
-  <main class="contact-container">
+    <main class="contact-container">
     <div class="sub-div">
         <a href="net-zero.html" class="grid-item1"
         style="background-color: #2846a5;">
           <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Publications and Products</h4></span>
         </a>
         
-        <a href="testing.html" class="grid-item1"
+        <a href="training.html" class="grid-item1"
         style="background-color: #4f2170;">
         <span><img src="pics/quickLinks-arrow.png" alt="" class="arrow-img">  <h4>Training and<br> Events</h4></span>
         </a>
@@ -84,33 +220,35 @@
 
     <section>
       <h3>Research and Consultancy</h3>
-      <p>Enquiries about our research and consultancy solutions</p>
-      <p>Email: <a href="mailto:business.enquiries@hse.gov.uk">business.enquiries@hse.gov.uk</a></p>
+      <p style="font-size: 12px;"><b>Enquiries about our <u style="color: #58595b;">research and consultancy </u>solutions</b></p>
+      <span style="font-size: 12px;">Email:<p style="color: #58595b !important;font-weight: bold;">business.enquiries@hse.gov.uk</p></span>
     </section>
 
     <section>
       <h3>General Enquiries</h3>
-      <p>For any other general enquiries, please either contact us via our <a href="https://www.hse.gov.uk/contact/">enquiry form</a>, or email: <a href="mailto:business.enquiries@hse.gov.uk">business.enquiries@hse.gov.uk</a></p>
+      <p style="font-size: 12px;">For any other general enquiries, please either contact us via our <a href="https://www.hse.gov.uk/contact/" style="color: #58595b;font-weight: bold;">enquiry form</a>, or email: <a href="mailto:business.enquiries@hse.gov.uk" style="color: #58595b;font-weight: bold;">business.enquiries@hse.gov.uk</a></p>
     </section>
 
-    <section>
+    <section class="visiting">
       <h3>Visiting The HSE Science and Research Centre</h3>
       <p>If you are visiting our Buxton site and need to contact us, please call Reception.</p>
       <p>Telephone: +44 (0)203 028 2000</p>
       <p>Fax: +44 (0)1298 218986</p>
 
       <h4>Our postal address is:</h4>
-      <address>
+      <address style="font-size: 12px; font-weight:bold;color: #58595b; "><u>
         The HSE Science and Research Centre<br />
         Harpur Hill<br />
         Buxton<br />
         Derbyshire<br />
         SK17 9JN<br />
-        UK
+        UK</u>
       </address>
-      <p>what3words: <a href="https://what3words.com/safely.rules.eclipses" target="_blank">///safely.rules.eclipses</a></p>
+      <p style="font-weight: bold;font-size: 12px; ">what3words: <a href="https://what3words.com/safely.rules.eclipses" target="_blank" style="color: #58595b; font-weight: bold; text-decoration: underline;">///safely.rules.eclipses</a></p>
     </section>
-</div>
+    <span><a href="@" style="font-size: 12px;color:#58595b;text-decoration: underline; font-weight: bolder;" >Back to the top</a></span>
+
+  </div>
   </main>
 
   <footer class="site-footer">
@@ -125,5 +263,16 @@
     </div>
   </footer>
 
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>

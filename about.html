@@ -7,13 +7,30 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="sidebar.css"/>
   <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <style>
   
 
 </style>
 <body>
-  <nav>
+  <div class="mobile-container" style="align-items: end;">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+       <div id="myLinks">
+        
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> 
+</div>
+     <nav class="web-view-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -51,8 +68,8 @@
       <p>Not only does the science and research we perform support HSE in its role as an evidence-based, world-class regulator, our combination of scientific expertise, real-world experience, and knowledge of the regulatory landscape also helps wider government and industry to solve the health, safety, and wellbeing challenges of their everyday work, as well as in times of crisis.</p>
       <p>It also makes us unrivalled in our ability to assist both public and private sector organisations to research and safely enable the products, processes, and innovative technologies of the future.</p>
     </section>
-    <div class="video-container">
-        <iframe width="870" height="515" src="https://www.youtube.com/embed/ZEIcHfDY9wQ?si=Nbr-Oy61-b8sC0p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container" style="width: max-content;">
+        <iframe   src="https://www.youtube.com/embed/ZEIcHfDY9wQ?si=Nbr-Oy61-b8sC0p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     <section class="mission">
       <h2>Our Mission and Vision</h2>
@@ -83,10 +100,24 @@
 
     <section class="networks">
       <h2>Our Professional Networks</h2>
-      <p>Effective collaboration is crucial to our success. We use networks and strategic partnerships to enhance our research and impact.</p>
-    </section>
+<p>Effective collaboration is crucial to our success. We use networks and strategic partnerships, including those with industry, academia, international research institutes and co-regulators, to pool resources, share knowledge and, as a result, be more effective in our ability to improve health and safety outcomes for all. NEW</p>
+   
+<p style="text-decoration: underline; font-weight: bold; font-size: 12px; gap: 3px;"><svg width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg> See our collaboration</p>
+</section>
+
+    <span><a href="#" style="color: #58595b;font-size: 13px; font-weight: bolder; ">Back to top</a></span>
 </div>
   </main>
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 </body>
 </html>
