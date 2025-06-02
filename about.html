@@ -11,25 +11,311 @@
 
 </head>
 <style>
+  .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  background-color: #555;
+  padding: 0px auto;
   
+  
+  }
+  
+  .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  }
+  
+  .logo-text,
+  .logo-hse {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+  }
+  
+  .from-text {
+  font-size: 24px;
+  font-weight: bold;
+  }
+  
+  .user-section {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  }
+  
+  .auth-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+   gap: 10px;
+  }
+  .login-buttons{
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid white;
+  padding-right: 10px;
+  }
+  .search-bar {
+  display: flex;
+  gap: -140px;
+  }
+  
+  .search-bar input {
+  padding: 6px;
+  width: 270px;
+  }
+  
+  .btn-login {
+  background: #e5e5e5;
+  border: none;
+  padding: 4px 20px;
+  cursor: pointer;
+  color: #58595b;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px
+   }
+   .btn-login1 {
+  color: #e5e5e5;
+  border: none;
+  padding: 4px 100px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #58595b;
+  font-weight: bold;
+  font-size: 16px;
+  
+   }
+  
+  .basket-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+  }
+  .basket-link1 {
+  display: none;
+  }
+  .company-logo{
+    display: none;
+  }
+  
+  
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .user-section {
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  .logo-section{
+    display: none;
+  }
+  .company-logo{
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-bottom:1px solid black
+  }
+  .btn-login{
+    display: none;
+  }
+  
+  .search-bar {
+  display: none;}
+  .mobile-header{
+    display: flex;
+    flex-direction: row;
+  }
+  .basket-link{
+    display: none;
+  }
+  .basket-link1{
+    display: block;
+  }
+  .logged-in{
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
+  }
+  }
+  
+.footer-section{
+  display: flex;
+  background-color: #58595b;
+  color: #fff;
+  justify-content: space-around;
+}
+.footer-section h3{
+ font-size: 16px;
+text-decoration: underline;}
+.footer-section2  {
+  display: flex;
+  color: #981e32;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-right:60px;
+  margin-top: 10px;
+}
+.footer-section2 span {
+  color: #981e32;
+  font-weight: bold;
 
-</style>
+}
+.footer-section2 span a {
+
+  color: #981e32;
+  font-weight: bold;
+  font-size: 13px;
+}
+.footer-section3  {
+  display: flex;
+  color: #981e32;
+  margin-left: 80px;
+  margin-right:60px;
+ }
+.footer-section3 span {
+  color: #981e32;
+  font-weight: bold;
+  margin-right: 185px;
+
+}
+.footer-section3 span a {
+
+  color: #981e32;
+  font-weight: bold;
+  font-size: 12px;
+}
+footer{
+  margin: 10px;
+}
+.footer-bottom{
+  border-top: 1px solid black;
+  margin-top:20px;
+display:flex ;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 80px;
+margin-right: 80px;
+
+}
+.footer-bottom .icons img {
+  width: 35px;
+  height: 35px;
+}
+.footer-bottom span .iso-icon {
+  width: 80px;
+  height: 50px;
+}
+@media (max-width:600px) {
+  .footer-bottom .icons img {
+  width: 30px;
+  height: 30px;
+}
+  .footer-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section2{
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-section3{
+    flex-direction: column;
+    align-items: start;
+    margin-left: 60px;
+  }
+  .footer-section3 span a {
+    color: #981e32;
+    font-weight: bold;
+    font-size: 12px;
+    width: 200px;
+    }
+    .footer-section h3{
+ font-size: 14px;
+text-decoration: underline;
+padding-top: 8px;
+padding-bottom: 8px;}
+  
+}
+  
+  </style>
 <body>
-  <div class="mobile-container" style="align-items: end;">
+ 
+  <header class="header">
+    <div class="logo-section">
+        <h1>
+      <img src="pics/HSE-solutions-logo-4.png" alt="Solutions" class="logo-text" />
+    </h1>
+    <p style="color: white !important;">Products and services to help you solve <br> your health and safety challenges</p>
+    </div>
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-       <div id="myLinks">
-        
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="index.html">Home</a>
+    <div class="mobile-header">
+    <div class="mobile-container">
+
+      <!-- Top Navigation Menu -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> <i class="fa fa-bars" ></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <span style="display: flex; flex-direction: column;width: 100%;">
+          <input type="text" placeholder="Enter Keyword" style="width: 250px; border:none;margin-top: 15px;" />
+        <button class="btn-login1">Search</button></span>
+        </div>
+         
+      </div> 
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> 
-</div>
+    <div class="user-section">
+      <div class="auth-links">
+        <span class="login-buttons">
+        <span class="logged-in" style="color: #fff; font-weight: bold;">You are not logged in</span>
+        <span>
+        <button class="btn-login">Login</button>
+        <button class="btn-login">Register</button>
+      </span></span>
+        <a href="#" class="basket-link">🛒 0 items in basket</a>
+        <a href="#" class="basket-lin1" style="color: #fff;">🛒 0 </a>
+      </div>
+
+      <div class="search-bar">
+        
+        <input type="text" placeholder="Enter Keyword" />
+        <button class="btn-login">Search</button>
+      </div>
+    </div>
+  </div>
+  </header>  
+
+
+  <div class="company-logo">
+    <span style="width: 230px;display: flex;flex-direction: column;">
+    
+    <img src="pics/HSE-solutions-logo-mobile2.png" alt="company-logo">
+    <p style="color: #58595b;font-weight: bold; font-size: 12px;line-height: 12px;">Products and services to help you solve your health and safety challenges</p>
+  </span></div>
+
+
+
+
      <nav class="web-view-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -109,15 +395,65 @@
 </div>
   </main>
 
+  <footer style="margin-top: 50px;">
+    <div class="footer-container" style="margin-bottom: 4px solid black;padding-bottom: 5px;">
+        <div class="footer-section">
+            <h3>Share on Facebook</h3>
+            <h3>Share on Twitter</h3>
+            <h3>Share on LinkedIn</h3>
+            </div>
+        
+        <div class="footer-section2">
+            
+                <span>><a href="#">Change Cookie Settings</a></span>
+                <span>><a href="#">Site Map</a></span>
+                <span>><a href="#">Disclaimer</a></span>
+                <span>><a href="#">Licensing Info</a></span>
+                <span>><a href="#">Privacy Notice</a></span>
+                <span>><a href="#">Accessibility</a></span>
+                <span>><a href="#">Modern Slavery Act (PDF)</a></span>
+                <span>><a href="#">Our Location</a></span>
+            
+        </div>
+        
+        <div class="footer-section3">
+            
+                <span>><a href="#">Catsers</a></span>
+                <span>><a href="#">Explosives Approved Body</a></span>
+                <span>><a href="#">GOV.UK</a></span>
+            
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span class="icons">
+        <img src="pics/LinkedIn_icon.svg.png" alt="">
+        <img src="pics/2496110.png" alt="">
+        <img src="pics/images.png" alt="">
+        <img src="pics/images (1).png" alt="">
+      </span>
+      <span><img src="pics/iso 9001 ukas-rgb.jpg" class="iso-icon" alt=""></span>
+    </div>
+</footer>
+
   <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+   function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
+  }
+}
     </script>
 </body>
 </html>

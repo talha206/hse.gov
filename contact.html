@@ -107,12 +107,14 @@
   }
 
   .grid-item1 span h4 {
-    font-size: 0.7rem;
+    font-size: 15px;
+    font-weight: bolder;
+    word-spacing: 3px;
   }
 
   .arrow-img {
-    max-width: 10px;
-    max-height: 10px;
+    max-width: 20px;
+    max-height: 20px;
   }
   .contact-container{
     overflow-wrap: break-word;
@@ -127,31 +129,314 @@
   }
 }
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  background-color: #555;
+  padding: 0px auto;
+  
+  
+  }
+  
+  .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  }
+  
+  .logo-text,
+  .logo-hse {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+  }
+  
+  .from-text {
+  font-size: 24px;
+  font-weight: bold;
+  }
+  
+  .user-section {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  }
+  
+  .auth-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+   gap: 10px;
+  }
+  .login-buttons{
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid white;
+  padding-right: 10px;
+  }
+  .search-bar {
+  display: flex;
+  gap: -140px;
+  }
+  
+  .search-bar input {
+  padding: 6px;
+  width: 270px;
+  }
+  
+  .btn-login {
+  background: #e5e5e5;
+  border: none;
+  padding: 4px 20px;
+  cursor: pointer;
+  color: #58595b;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+   }
+   .btn-login1 {
+  color: #e5e5e5;
+  border: none;
+  padding: 4px 100px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #58595b;
+  font-weight: bold;
+  font-size: 16px;
+  
+   }
+  
+  .basket-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+  }
+  .basket-link1 {
+  display: none;
+  }
+  .company-logo{
+    display: none;
+  }
+  
+  
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .user-section {
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  .logo-section{
+    display: none;
+  }
+  .company-logo{
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom:1px solid black
+  }
+  .btn-login{
+    display: none;
+  }
+  
+  .search-bar {
+  display: none;}
+  .mobile-header{
+    display: flex;
+    flex-direction: row;
+  }
+  .basket-link{
+    display: none;
+  }
+  .basket-link1{
+    display: block;
+  }
+  .logged-in{
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
+  }
+  .dropdown-content a {
+    font-size: 12px;
+  
+  }
+  }
+  
+.footer-section{
+  display: flex;
+  background-color: #58595b;
+  color: #fff;
+  justify-content: space-around;
+}
+.footer-section h3{
+ font-size: 16px;
+text-decoration: underline;}
+.footer-section2  {
+  display: flex;
+  color: #981e32;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-right:60px;
+  margin-top: 10px;
+}
+.footer-section2 span {
+  color: #981e32;
+  font-weight: bold;
+
+}
+.footer-section2 span a {
+
+  color: #981e32;
+  font-weight: bold;
+  font-size: 13px;
+}
+.footer-section3  {
+  display: flex;
+  color: #981e32;
+  margin-left: 80px;
+  margin-right:60px;
+ }
+.footer-section3 span {
+  color: #981e32;
+  font-weight: bold;
+  margin-right: 185px;
+
+}
+.footer-section3 span a {
+
+  color: #981e32;
+  font-weight: bold;
+  font-size: 12px;
+}
+footer{
+  margin: 10px;
+}
+.footer-bottom{
+  border-top: 1px solid black;
+  margin-top:20px;
+display:flex ;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 80px;
+margin-right: 80px;
+
+}
+.footer-bottom .icons img {
+  width: 35px;
+  height: 35px;
+}
+.footer-bottom span .iso-icon {
+  width: 80px;
+  height: 50px;
+}
+@media (max-width:600px) {
+  .footer-bottom .icons img {
+  width: 30px;
+  height: 30px;
+}
+  .footer-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section2{
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-section3{
+    flex-direction: column;
+    align-items: start;
+    margin-left: 60px;
+  }
+  .footer-section3 span a {
+    color: #981e32;
+    font-weight: bold;
+    font-size: 12px;
+    width: 200px;
+    }
+    .footer-section h3{
+ font-size: 14px;
+text-decoration: underline;
+padding-top: 8px;
+padding-bottom: 8px;}
+  
+}
+  
+
 </style>
 <body>
-
-  <header class="site-header">
-    
-    <div class="container">
-      <h1>HSE Science and Research Centre</h1>
-      
+  <header class="header">
+    <div class="logo-section">
+        <h1>
+      <img src="pics/HSE-solutions-logo-4.png" alt="Solutions" class="logo-text" />
+    </h1>
+    <p style="color: white !important;">Products and services to help you solve <br> your health and safety challenges</p>
     </div>
-  </header>
+
+    <div class="mobile-header">
     <div class="mobile-container">
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-       <div id="myLinks">
-        
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="index.html">Home</a>
+      <!-- Top Navigation Menu -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> <i class="fa fa-bars" ></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <span style="display: flex; flex-direction: column;width: 100%;">
+          <input type="text" placeholder="Enter Keyword" style="width: 250px; border:none;margin-top: 15px;" />
+        <button class="btn-login1">Search</button></span>
+        </div>
+         
+      </div> 
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> 
+    <div class="user-section">
+      <div class="auth-links">
+        <span class="login-buttons">
+        <span class="logged-in" style="color: #fff; font-weight: bold;">You are not logged in</span>
+        <span>
+        <button class="btn-login">Login</button>
+        <button class="btn-login">Register</button>
+      </span></span>
+        <a href="#" class="basket-link">🛒 0 items in basket</a>
+        <a href="#" class="basket-lin1" style="color: #fff;">🛒 0 </a>
+      </div>
+
+      <div class="search-bar">
+        
+        <input type="text" placeholder="Enter Keyword" />
+        <button class="btn-login">Search</button>
+      </div>
     </div>
+  </div>
+  </header>  
+
+
+  <div class="company-logo">
+    <span style="width: 230px;display: flex;flex-direction: column;">
+    
+    <img src="pics/HSE-solutions-logo-mobile2.png" alt="company-logo">
+    <p style="color: #58595b;font-weight: bold; font-size: 12px;line-height: 12px;">Products and services to help you solve your health and safety challenges</p>
+  </span></div>
+
+
      <nav class="web-view-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -187,41 +472,41 @@
     <section>
       <h1>Contact Us</h1>
       <p><b>The contact points below are for business and scientific enquiries to the HSE Science and Research Centre.</b> Please use the appropriate address for the quickest response.</p>
-      <p>If you need to report a health and safety issue, please go to <a href="https://www.hse.gov.uk/contact/">Tell us about a health and safety issue</a>. Other ways to contact HSE are listed at <a href="https://www.hse.gov.uk/contact/">Contact HSE</a>.</p>
+      <p>If you need to report a health and safety issue, please go to <a href="https://www.hse.gov.uk/contact/" style="color: #58595b;font-weight: bold;">Tell us about a health and safety issue</a>. Other ways to contact HSE are listed at <a href="https://www.hse.gov.uk/contact/">Contact HSE</a>.</p>
     </section>
 
     <section>
       <h3>Publications and Products</h3>
       <p>HSE Books, Safety Climate Tool and Stress Indicator Tool</p>
       <p>Telephone: +44 (0)333 202 5070</p>
-      <p>Email: <a href="mailto:hseorders@tso.co.uk">hseorders@tso.co.uk</a></p>
+      <p>Email: <a href="mailto:hseorders@tso.co.uk"style="color: #58595b;font-weight: bold;">hseorders@tso.co.uk</a></p>
     </section>
 
     <section>
       <h3>Training and Events</h3>
       <p>Enquiries about our courses and events</p>
       <p>Telephone: +44 (0)203 028 3704</p>
-      <p>Email: <a href="mailto:hsetraining@hse.gov.uk">hsetraining@hse.gov.uk</a></p>
+      <p>Email: <a href="mailto:hsetraining@hse.gov.uk"style="color: #58595b;font-weight: bold;">hsetraining@hse.gov.uk</a></p>
     </section>
 
     <section>
       <h3>Testing and Monitoring</h3>
       <p>Health and Hygiene Testing enquiries</p>
       <p>Telephone: +44 (0)203 028 3383</p>
-      <p>Email: <a href="mailto:registration.sample@hse.gov.uk">registration.sample@hse.gov.uk</a></p>
+      <p>Email: <a href="mailto:registration.sample@hse.gov.uk"style="color: #58595b;font-weight: bold;">registration.sample@hse.gov.uk</a></p>
 
       <p>Product and Process Validation Testing enquiries</p>
-      <p>Email: <a href="mailto:business.enquiries@hse.gov.uk">business.enquiries@hse.gov.uk</a></p>
+      <p>Email: <a href="mailto:business.enquiries@hse.gov.uk"style="color: #58595b;font-weight: bold;">business.enquiries@hse.gov.uk</a></p>
 
       <p>Enquiries about Proficiency Testing schemes run by HSE</p>
       <p>Telephone: +44 (0)203 028 3382</p>
-      <p>Email: <a href="mailto:proficiency.testing@hse.gov.uk">proficiency.testing@hse.gov.uk</a></p>
+      <p>Email: <a href="mailto:proficiency.testing@hse.gov.uk"style="color: #58595b;font-weight: bold;">proficiency.testing@hse.gov.uk</a></p>
     </section>
 
     <section>
       <h3>Research and Consultancy</h3>
       <p style="font-size: 12px;"><b>Enquiries about our <u style="color: #58595b;">research and consultancy </u>solutions</b></p>
-      <span style="font-size: 12px;">Email:<p style="color: #58595b !important;font-weight: bold;">business.enquiries@hse.gov.uk</p></span>
+      <span style="font-size: 12px;">Email:<p style="color: #58595b !important;font-weight: bold;font-size: 10px;">business.enquiries@hse.gov.uk</p></span>
     </section>
 
     <section>
@@ -251,28 +536,67 @@
   </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 HSE Science and Research Centre. All rights reserved.</p>
-      <ul class="footer-links">
-        <li><a href="https://www.hse.gov.uk/privacy.htm">Privacy Notice</a></li>
-        <li><a href="https://www.hse.gov.uk/accessibility.htm">Accessibility</a></li>
-        <li><a href="https://www.hse.gov.uk/disclaimer.htm">Disclaimer</a></li>
-        <li><a href="https://www.hse.gov.uk/cookies.htm">Cookie Policy</a></li>
-      </ul>
+  <footer style="margin-top: 50px;">
+    <div class="footer-container" style="margin-bottom: 4px solid black;padding-bottom: 5px;">
+        <div class="footer-section">
+            <h3>Share on Facebook</h3>
+            <h3>Share on Twitter</h3>
+            <h3>Share on LinkedIn</h3>
+            </div>
+        
+        <div class="footer-section2">
+            
+                <span>><a href="#">Change Cookie Settings</a></span>
+                <span>><a href="#">Site Map</a></span>
+                <span>><a href="#">Disclaimer</a></span>
+                <span>><a href="#">Licensing Info</a></span>
+                <span>><a href="#">Privacy Notice</a></span>
+                <span>><a href="#">Accessibility</a></span>
+                <span>><a href="#">Modern Slavery Act (PDF)</a></span>
+                <span>><a href="#">Our Location</a></span>
+            
+        </div>
+        
+        <div class="footer-section3">
+            
+                <span>><a href="#">Catsers</a></span>
+                <span>><a href="#">Explosives Approved Body</a></span>
+                <span>><a href="#">GOV.UK</a></span>
+            
+        </div>
     </div>
-  </footer>
+    
+    <div class="footer-bottom">
+      <span class="icons">
+        <img src="pics/LinkedIn_icon.svg.png" alt="">
+        <img src="pics/2496110.png" alt="">
+        <img src="pics/images.png" alt="">
+        <img src="pics/images (1).png" alt="">
+      </span>
+      <span><img src="pics/iso 9001 ukas-rgb.jpg" class="iso-icon" alt=""></span>
+    </div>
+</footer>
+
 
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+   function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
+  }
+}
     </script>
 </body>
 </html>

@@ -1,11 +1,8 @@
-
 .sub-dev{
     width: 300px;
 }
  
-.main{
-    width: 870px;
-}
+
 .grid-item1{
 background-color: var(--light-gray);
 text-decoration: none;
@@ -34,4 +31,10 @@ span{
 .arrow-img{
     width: 40px;
     height: 40px;
+}
+@media (max-width:600px) {
+    .arrow-img{
+        width: 30px;
+        height: 30px;
+    }
 }
