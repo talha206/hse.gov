@@ -14,7 +14,7 @@ body {
 
 /* Cookie Banner */
 .cookie-banner {
-    background-color: #1d70b8;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
@@ -386,7 +386,7 @@ nav{
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header-content,
     .nav-content,
     .main-content,
@@ -396,6 +396,12 @@ nav{
 
     .main-content {
         padding: 20px 15px;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    nav{
+        display: none;
     }
 
     .course-details {
@@ -439,6 +445,28 @@ nav{
     .course-title {
         font-size: 20px;
     }
+    .sub-div {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        gap: 10px;
+         margin-top: 20px;
+      }
+    
+      .grid-item1 {
+        max-height: 50px;
+        max-width: 145px;
+      }
+    
+      .grid-item1 span h4 {
+        font-size: 13px;
+        white-space: normal;
+        overflow-wrap: break-word;
+      }
+    
+      .arrow-img {
+        width: 20px;
+        height: 20px;
+      }
 }
 
 @media (max-width: 480px) {

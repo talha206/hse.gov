@@ -42,5 +42,6 @@ const courses = [
     `;
   
     table.appendChild(row);
+    
   });
   
